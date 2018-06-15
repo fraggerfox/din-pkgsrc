@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.10 2017/11/14 09:51:13 leot Exp $
+# $NetBSD$
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.din
 PKG_SUPPORTED_OPTIONS=	jack alsa
