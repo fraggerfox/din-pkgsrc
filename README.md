@@ -26,6 +26,10 @@ Credits
 
 * DIN Is Noise was written by [jag][2], who helped me a lot in making
   DIN's build to be compatible with FreeBSD.
+* Thanks to `trouble` for a machine to do and help with the package
+  development as well as testing and fixing of the package.
+* Thanks to `wiz` for reviewing and making fixes / changes to conform to
+  standardized `Makefile`.
 
 License
 -------
