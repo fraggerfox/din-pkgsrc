@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-src_Makefile.am,v 1.1 2018/12/10 20:33:06 fox Exp $
 
 Now it only links the library (ALSA / JACK) selected during build time.
 

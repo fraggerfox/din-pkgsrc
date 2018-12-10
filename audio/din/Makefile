@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2018/12/10 20:33:06 fox Exp $
 
 DISTNAME=	din-38a
 CATEGORIES=	audio

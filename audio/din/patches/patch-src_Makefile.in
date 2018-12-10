@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-src_Makefile.in,v 1.1 2018/12/10 20:33:06 fox Exp $
 
 Removed linker flags, it is now handled by the pkgsrc script.
 

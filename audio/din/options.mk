@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2018/12/10 20:33:06 fox Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.din
 PKG_OPTIONS_OPTIONAL_GROUPS=	backend
