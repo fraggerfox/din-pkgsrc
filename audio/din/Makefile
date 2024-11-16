@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2023/02/04 16:10:56 fox Exp $
+# $NetBSD: Makefile,v 1.51 2024/10/04 03:49:14 ryoon Exp $
 
-DISTNAME=	din-56
+DISTNAME=	din-58.1
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	https://archive.org/download/dinisnoise_source_code/
 
@@ -13,8 +14,19 @@ USE_LANGUAGES=	c c++
 USE_TOOLS+=	autoreconf pkg-config gmake
 GNU_CONFIGURE=	yes
 
-LIBS+=		-ltcl -lSDL -lGL -lpthread
-LIBS.Darwin+=   -lSDLmain -lSDL -Wl,-framework,Cocoa
+.include "../../mk/bsd.prefs.mk"
+
+# Work around syntax errors from clang 15.0.0
+.if ${OPSYS} == "Darwin" && ${OS_VERSION:R} >= 14
+CXXFLAGS+=	-std=c++20
+.endif
+
+# Don't depend on -lGL on Darwin, otherwise a black screen is produced
+.if ${OPSYS} == "Darwin"
+LIBS+=	-ltcl -lSDLmain -lSDL -framework Cocoa -framework OpenGL -lpthread
+.else
+LIBS+=	-ltcl -lSDL -lGL -lpthread
+.endif
 
 .include "options.mk"
 

@@ -1,7 +1,7 @@
-$NetBSD: distinfo,v 1.31 2023/02/04 16:10:56 fox Exp $
+$NetBSD: distinfo,v 1.34 2024/02/18 01:00:04 fox Exp $
 
-BLAKE2s (din-56.tar.gz) = 61af2316274ee91892797be303819bab22291860b0c116d584d0ca1d1bb0f1ef
-SHA512 (din-56.tar.gz) = 2e3e985abec9f0f097d51fb4cff5e991c5f80091586c0a4c47533c623dc9c13bae6b7f8a3d18bed1fc150e6527482b4ae03a9d1d9c444ae92b88204892ce7e04
-Size (din-56.tar.gz) = 3716779 bytes
-SHA1 (patch-src_Makefile.am) = dd222d23a5a4c95a803c88d3467eb2a5fe7c09a0
+BLAKE2s (din-58.1.tar.gz) = 1776667a034fb175228b6e45c1381963f0e763fa8409572698cbef8574a38bf8
+SHA512 (din-58.1.tar.gz) = ee2d63309347167af3b4e41a0ad3ce1faad727a4e079cd9e63d402b680144aed81dbee9d38bc517acbb30a1c9af18b726841d0c94d96cbfb2b1581da98af21c1
+Size (din-58.1.tar.gz) = 3689591 bytes
+SHA1 (patch-src_Makefile.am) = 81bc3100ab2de28185f6232735b7f088598cb58f
 SHA1 (patch-src_Makefile.in) = 3135bd8315cfdd65e7d885fc80f4baa89b7d94dc
